@@ -1,0 +1,40 @@
+
+<div class="cuerpo">
+    <section>
+        <div class="tituloSec">
+            <h2>Opcion Seccion 4</h2>
+        </div>
+        <div *ngFor="let plato of platos; let i = index" class="plato">
+            <ng-container *ngIf="i % 2 === 1; else normalOrder">
+                <div class="precio">{{ plato.precio }} bs</div>
+                <article>
+                    
+                    <div class="titulo2">
+                        <h3>{{ plato.titulo }}</h3>
+                    </div>
+                    <div class="descripcion2">
+                        <p>{{ plato.descripcion }}</p>
+                    </div>
+                    
+                </article>
+                <div class="imagen">
+                    <img src="assets/pension/ensalada.webp" alt="">
+                </div>
+            </ng-container>
+            <ng-template #normalOrder>
+                <div class="imagen">
+                    <img src="assets/pension/ensalada.webp" alt="">
+                </div>
+                <article>
+                    <div class="titulo">
+                        <h3>{{ plato.titulo }}</h3>
+                    </div>
+                    <div class="descripcion">
+                        <p>{{ plato.descripcion }}</p>
+                    </div>
+                </article>
+                <div class="precio">{{ plato.precio }} bs</div>
+            </ng-template>
+        </div>
+    </section>
+</div>

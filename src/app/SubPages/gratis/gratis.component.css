@@ -1,0 +1,10 @@
+.cuerpo{
+    width: 100%;
+
+}
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

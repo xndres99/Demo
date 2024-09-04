@@ -1,0 +1,98 @@
+.cuerpo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section{
+    margin: 0 20px;
+    background-color: antiquewhite;
+    padding: 20px 0;
+    width: 90%;
+}
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+h3, h4,h2,p{
+    margin: 0;
+   
+}
+.plato{
+    background-color: antiquewhite;
+    width: 90%;
+    max-width: 90%;
+    height: 100px;
+    max-height: 100px;
+    margin:  2px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word; /* Para IE 5.5+, Safari 1.1-6.x */
+    overflow-wrap: break-word;
+
+    border-left: 1px solid rgb(228, 200, 164);
+    
+    cursor: pointer;
+
+}
+.plato:hover{
+    scale: 1.05;
+}
+ .tituloSec{margin-left: 10px;
+
+
+}
+.titulo{
+    margin-left: 10px;
+}
+article{
+    width: 90%;
+}
+.descripcion{
+    max-width: 100%;
+    margin: 0 20px ;
+    display: flex;
+   flex-wrap: wrap;
+    white-space: normal;
+    word-wrap: break-word; /* Para IE 5.5+, Safari 1.1-6.x */
+    overflow-wrap: break-word;
+}
+.precio{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid rgba(44, 49, 54, 0.753);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    section{
+        width: 100%;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 11px;
+    }
+    .precio{
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+}

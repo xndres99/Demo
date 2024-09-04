@@ -1,0 +1,83 @@
+.cuerpo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linea{
+    width: 80%;
+    height: .5px;
+    border: 1px solid brown;
+    margin-left: 20px;
+}
+
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    scale: 1.1;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.descripcion{
+    margin:0 15px ;
+    text-align: justify;
+}
+.subPrecio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.precio{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid rgba(44, 49, 54, 0.753);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    
+    .linea{
+        margin-left:2px;
+    }
+    .card{
+        width: 180px;
+        margin: 5px;
+        padding-bottom: 10px;
+    }
+    .imagen, img{
+        width: 180px;
+    }
+}
